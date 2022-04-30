@@ -146,7 +146,7 @@
 
 .keyboard-key {
   height: 58px;
-  width: clamp(20px, 2.5vw, 43px);
+  width: 43px;
   margin: 0 6px 0 0;
   background-color: var(--clr-light-grey);
   color: white;
