@@ -146,7 +146,7 @@
 
 .keyboard-key {
   height: 58px;
-  width: clamp(20px, 2.5vw, 43px);
+  width: 43px;
   margin: 0 6px 0 0;
   background-color: var(--clr-light-grey);
   color: white;
@@ -181,4 +181,22 @@
 .puzzle-box-grey {
   background-color: var(--clr-dark-grey);
   border-color: var(--clr-dark-grey);
+}
+
+@media only screen and (max-width: 600px) {
+  .keyboard-key {
+    height: clamp(40px, 10vw, 58px);
+    width: clamp(25px, 7vw, 43px);
+    font-size: 0.9em;
+  }
+  .special-key {
+    width: clamp(57px, 12vw, 75px);
+  }
+  .puzzle-box {
+    height: clamp(40px, 13vw, 60px);
+    width: clamp(40px, 13vw, 60px);
+  }
+  .title {
+    font-size: 1.5rem;
+  }
 }
